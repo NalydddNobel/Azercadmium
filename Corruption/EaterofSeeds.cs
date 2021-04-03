@@ -3,15 +3,17 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Azercadmium.Items.Corruption
+namespace Azercadmium.Items.Blowpipes.PH
 {
-	public class EaterofSeeds : ModItem
+	public class EaterOfSeeds : ModItem
 	{
-		public override void SetStaticDefaults() {
+		public override void SetStaticDefaults() 
+		{
 			DisplayName.SetDefault("Eater of Seeds");
 			Tooltip.SetDefault("Uses seed shots as ammo\nWhile in your inventory, the following enemies will drop Corrupt Seedshots:\nEater of Souls, Corrupt Discus, Devourer");
 		}
-		public override void SetDefaults() {
+		public override void SetDefaults() 
+		{
 			item.CloneDefaults(ItemID.Blowpipe);
 			item.damage = 16; //9
 			item.knockBack = 2.5f; //3.5
